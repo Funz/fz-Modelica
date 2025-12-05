@@ -150,7 +150,7 @@ def test_with_fz():
             with open(compiled_file, 'r') as f:
                 content = f.read()
                 assert "0.5" in content, "Variable convection not substituted"
-                assert "${convection" not in content, "Variable marker ${convection still present"
+                assert "${convection" not in content, "Variable marker ${convection} still present"
         print("✓")
         
         print("  fz integration tests passed!\n")
